@@ -1,0 +1,19 @@
+model:
+  name: 'preact_resnet18'
+  num_classes: 100
+
+dataset:
+  name: "CIFAR100"
+  path: "./data"
+  batch_size: 64
+  augmentation: 'jitter'
+
+training:
+  device: "cuda"
+  epochs: 30
+  early_stopping: 5
+  optimizer: "SGD"
+  learning_rate: 0.1
+  scheduler: "StepLR"
+  scheduler_params:
+    step_size: 10
