@@ -19,7 +19,7 @@ The following table presents the test accuracy results for selected configuratio
 | preact_resnet18   | SGD        | 0.01          | Rotatiom              | 53.01%        |
 
 ## Wandb metrics
-![image.png](attachment:99af404d-e438-4ed7-9b86-888a557e5353.png)
+![image.png](wandb_metrics.png)
 ## Training Pipeline Efficiency
 The training pipeline is optimized in the following ways:
 1. **Use of Concatenated Datasets**: Augmentation transformations are done at the start and the result is concatenated with the initial dataset as opposed to applying augmentation during training
